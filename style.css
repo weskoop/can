@@ -22,15 +22,8 @@ html {
 }
 
 body {
-	font-family: 'Source Code Pro', monospace;
-	color: #333;
-	background-color: #fff;
+	font-family: monaco, Consolas, monospace;
 	margin: 0;
-}
-
-a {
-	color: #444;
-	background-color: rgba(255,255,100,0.8);
 }
 
 img {
@@ -39,10 +32,6 @@ img {
 	height: auto;
 	vertical-align: middle;
 	border: 0;
-}
-
-a:hover {
-	color: #000;
 }
 
 p {
@@ -60,12 +49,13 @@ p {
 	top: 0;
 	left: 0;
 	right: 0;
-  background-color: rgba(255,255,100,0.8);
+  background-color: rgba(0,0,255,0.8);
 	font-size: 1.2em;
 	text-transform: uppercase;
 }
 
 .menu a {
+	color: #fff;
 	margin-left: 30px;
 	background-color: transparent;
 	text-decoration: none;
