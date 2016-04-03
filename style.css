@@ -1,0 +1,124 @@
+/*
+Theme Name: Can
+Theme URI: http://weskoop.com
+Author: Wes Koopmans
+Author URI: http://weskoop.com
+Description: Can this template not be so small and fast!
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: small, fast
+Text Domain: rb-web
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	font-family: 'Source Code Pro', monospace;
+	color: #333;
+	background-color: #fff;
+	margin: 0;
+}
+
+a {
+	color: #444;
+	background-color: rgba(255,255,100,0.8);
+}
+
+img {
+	max-width: 100%;
+	width: auto\9;
+	height: auto;
+	vertical-align: middle;
+	border: 0;
+}
+
+a:hover {
+	color: #000;
+}
+
+p {
+	margin: 2em 0;
+}
+
+.site-title,
+.site-description,
+.entry-title {
+	display: none;
+}
+
+.site-navigation {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+  background-color: rgba(255,255,100,0.8);
+	font-size: 1.2em;
+	text-transform: uppercase;
+}
+
+.menu a {
+	margin-left: 30px;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.menu {
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.menu ul,
+ul.menu {
+	list-style: none;
+	padding: 10px 20px;
+	text-align: right;
+}
+
+.menu li {
+	display: inline-block;
+}
+
+li.current-menu-item {
+	display: none;
+}
+
+.hentry {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px;
+	margin: 44px auto 0;
+}
+
+.admin-bar .site-navigation,
+.admin-bar .hentry {
+	margin-top: 32px;
+}
+
+.gallery {
+	margin: 0 -20px;
+	overflow-x: scroll;
+	overflow-y: auto;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+
+.gallery-item {
+	display: inline-block;
+	width: 90%;
+	padding: 0;
+	margin: 0;
+}
+
+.gallery-item + .gallery-item {
+	margin-left: 20px;
+}
