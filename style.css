@@ -52,6 +52,7 @@ p {
   background-color: rgba(0,0,255,0.8);
 	font-size: 1.2em;
 	text-transform: uppercase;
+	z-index: 10;
 }
 
 .menu a {
@@ -104,11 +105,16 @@ li.current-menu-item {
 
 .gallery-item {
 	display: inline-block;
-	width: 90%;
+	max-width: 90%;
 	padding: 0;
 	margin: 0;
 }
 
 .gallery-item + .gallery-item {
 	margin-left: 20px;
+}
+
+.gallery-caption {
+	margin-left: 20px;
+	font-size: .5em;
 }
