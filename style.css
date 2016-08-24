@@ -4,14 +4,11 @@ Theme URI: http://weskoop.com
 Author: Wes Koopmans
 Author URI: http://weskoop.com
 Description: Can this template not be so small and fast!
-Version: 0.1
+Version: 0.2
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: small, fast
 Text Domain: rb-web
-
-This theme, like WordPress, is licensed under the GPL.
-Use it to make something cool, have fun, and share what you've learned with others.
 */
 html {
   box-sizing: border-box;
@@ -22,20 +19,20 @@ html {
 }
 
 body {
-	font-family: monaco, Consolas, monospace;
-	margin: 0;
+	font-family: Monaco, Consolas, monospace;
+	margin: 6em 0;
+	line-height: 1.5em;
 }
 
 img {
 	max-width: 100%;
-	width: auto\9;
 	height: auto;
 	vertical-align: middle;
 	border: 0;
 }
 
 p {
-	margin: 2em 0;
+	margin: 1.5em 0;
 }
 
 .site-title,
@@ -49,33 +46,33 @@ p {
 	top: 0;
 	left: 0;
 	right: 0;
-  background-color: rgba(0,0,255,0.8);
-	font-size: 1.2em;
+  background-color: rgba(0,0,255,0.933333333);
 	z-index: 10;
 }
 
-.menu a {
-	color: #fff;
-	margin-left: 30px;
-	background-color: transparent;
-	text-decoration: none;
-}
-
 .menu {
-	width: 100%;
-	max-width: 600px;
+	min-width: 40em;
 	margin: 0 auto;
 }
 
 .menu ul,
 ul.menu {
+	padding: 0;
+	margin: 0;
 	list-style: none;
-	padding: 10px 20px;
 	text-align: right;
 }
 
 .menu li {
+	display: inline;
+
+}
+
+.menu a {
 	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	padding: 1.5em 2em;
 }
 
 li.current-menu-item {
@@ -84,9 +81,9 @@ li.current-menu-item {
 
 .hentry {
 	width: 100%;
-	max-width: 600px;
-	padding: 20px;
-	margin: 44px auto 0;
+	max-width: 40em;
+	padding: 0 2em;
+	margin: 0 auto;
 }
 
 .admin-bar .site-navigation,
@@ -116,4 +113,115 @@ li.current-menu-item {
 .gallery-caption {
 	margin-left: 20px;
 	font-size: .5em;
+}
+
+
+
+/***** TODO *******/
+
+
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%; /* Image does not overflow the content area */
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
 }
